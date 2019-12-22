@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+<body onload="onLoadFunction()">
+
+<div id="container">
+    <div id="logo">
+        <a class="link" href="dostawa.html">Dostawa</a>
+        <a class="link" href="rejestracja.html">Rejestracja</a>
+        <a class="link" href="sklep.html">Sklep</a>
+    </div>
+
+    <div class="content flexRow">
+        <div id="main">
+            <div class="item-row" id="items-container"></div>
+        </div>
+        <div class="basket-container">
+            <div>
+                <div class="flexRow">
+                    <button type="button" class="btn btn-primary w-45" onclick="alert('Kupiłeś!!')">Kup</button>
+                    <button type="button" class="btn btn-danger w-45" onclick="clearBasket()">Wyczyść</button>
+                </div>
+                <div class="basket-price">
+                    <span>Cena koszyka: </span>
+                    <span id="price-sum">0</span>
+                </div>
+            </div>
+            <div id="selected-items-container" class="selected-items-basket "></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
